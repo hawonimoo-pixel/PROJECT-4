@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunnydale School</title>
+
+    <style>
+        /* Basic page style */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 35px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* Section colors (simple beginner colors) */
+        .mission {
+            color: green;
+        }
+
+        .events {
+            color: salmon;
+        }
+
+        .contact {
+            color: lightseagreen;
+        }
+
+        /* Upcoming events background */
+        #upcoming-events {
+            background-color: rgb(243, 243, 239);
+        }
+
+        /* Outdoor events */
+        .outdoor {
+            background-color: rgb(137, 225, 255);
+            padding: 5px;
+            border: 1px solid rgb(11, 59, 11);
+        }
+
+        /* Contact box */
+        .section {
+            background-color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sunnydale School</h1>
+
+    <!-- Mission Section -->
+    <h2 class="mission">Mission Statement</h2>
+    <p>
+        We aim to provide quality education and help students grow academically and socially.
+    </p>
+
+    <!-- Upcoming Events -->
+    <h2 id="upcoming-events" class="events">Upcoming Events</h2>
+
+    <ul>
+        <li data-event-type="indoor">
+            Science Fair -
+            <span style="font-weight:bold; color:red;">June 10</span>
+        </li>
+
+        <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
+            Art Exhibition -
+            <span style="font-weight:bold; color:red;">June 15</span>
+        </li>
+
+        <li class="outdoor" data-event-type="outdoor" title="Event Type: Outdoor">
+            Sports Day -
+            <span style="font-weight:bold; color:red;">June 20</span>
+        </li>
+    </ul>
+
+    <!-- Contact Section -->
+    <h2 class="contact">Contact Us</h2>
+
+    <div class="section">
+        <p>
+            Email:
+            <a href="mailto:info@sunnydale.com" title="Click to copy email">
+                info@sunnydale.com
+            </a>
+        </p>
+
+        <p>
+            Phone:
+            <a href="tel:+1234567890" title="Click to copy phone">
+                +1234567890
+            </a>
+        </p>
+
+        <!-- Imagine clicking here shows a message: 'Thanks for reaching out!' -->
+    </div>
+
+</body>
+</html>
